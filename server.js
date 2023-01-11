@@ -16,6 +16,9 @@ connectDB();
 const app = express();
 app.use(express.json());
 
+// var cors = require('cors')
+// app.use(cors());
+
 if (process.env.NODE_ENV === "development") {
   app.use(morgan("dev"));
 }
